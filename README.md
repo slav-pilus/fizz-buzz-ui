@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project have a sister project [fizz-buzz-backed](https://github.com/slavP/fizz-buzz-backend) that can be used to provide backend functionality.
 
 ## Code scaffolding
 
@@ -22,6 +23,14 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Example
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Live demo of the project is deployed [here](http://fizz-buzz-ui.s3-website.eu-west-2.amazonaws.com/)
+
+## Design decision made
+
+ - As this is very simple project with limited functionality only single view component is used for the front end.
+ - The form definition of the component is done by using reactive form approach.
+ - Bootstrap 4 is front end css framework (no js dependencies are included)
+ - The backend functionality is accessed by means of `FizzBuzzService` that makes rest call to the back-end server and return an Observable of `FizzBuzzResonse` object. 
+
